@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraMask</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/compra.css">
+
+</head>
+
+<body>
+    <div id="compra"></div>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logoo">
+            <img src="images/logo2.png" alt="" width="250" height="250">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="product.html">cartelera</a>
+            <a href="#menu">Pagar</a>
+            <a href="aboutus.html">about us</a>
+        </nav>
+
+        <div class="icons" id="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+
+
+
+    <!-- slider section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span></span> espacio </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/hamlet.jpg" alt="" width="250" height="250">
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Importe</div>
+                    <div class="col-6" id="obra-importe" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Fecha 
+                    </div>
+                    <div class="col-6"  id="obra-fecha" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Hora
+                    </div>
+                    <div class="col-6"  id="obra-hora" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Lugar de
+                        Teatro</div>
+                    <div class="col-6"  id="obra-sala" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Asientos Seleccionados
+                    </div>
+                    <div class="col-6"  id="obra-asientos"style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+                </div>
+
+            </div>
+
+            <div class="content">
+
+
+                <form action="tu-servidor-de-procesamiento" method="post">
+
+
+                    <div class="form-group">
+                        <label for="cardNumber">Número de Tarjeta</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456"
+                            maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardExpiry">Fecha de Caducidad</label>
+                        <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/YY" pattern="\d{2}/\d{2}"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardCVV">CVV</label>
+                        <input type="text" id="cardCVV" name="cardCVV" placeholder="123" maxlength="3" pattern="\d{3}"
+                            required>
+                    </div>
+                    <div class="proceedBtnEl">
+                    <a href="entrada.html?id=placeholder" id="entradabtn" type="submit" value="contact now" class="btn">Comprar entradas</a>
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- slider section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+
+
+
+    </section>
+
+    <!-- menu section ends -->
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100070092878427" target="_blank"
+                class="fab fa-facebook-f"></a>
+            <a href="https://x.com/bluedpirates?t=i2Jb9i-0HT_ufVsc0LtRCg&s=09" target="_blank"
+                class="fab fa-twitter"></a>
+            <a href="https://instagram.com/dramask?igshid=MTNiYzNiMzkwZA==" target="_blank"
+                class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">home</a>
+            <a href="aboutus.html">about</a>
+            <a href="product.html">cartelera</a>
+            <a href="#menu">pagar</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="credit">©2021-2024 DraMask Imports, SRL ES B45203871 | <span>Web Design DraMask</span></div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/compra.js"></script>
+</body>
+
+</html>

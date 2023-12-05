@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraMask</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div id="horario"></div>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logoo">
+            <img src="images/logo2.png" alt="" width="250" height="250">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="product.html">cartelera</a>
+            <a href="#menu">Horarios</a>
+            <a href="aboutus.html">about us</a>
+        </nav>
+
+        <div class="icons" id="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+
+
+
+    <!-- slider section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span></span> espacio </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/hamlet.jpg" alt="" width="250" height="250">
+
+            </div>
+
+            <div class="content">
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Género</div>
+                    <div class="col-6" id="obra-genero" style="border: 3px solid black; padding: 10px; text-align: center;">
+                        <!-- El género de la obra se mostrará aquí -->
+                    </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Descripción
+                    </div>
+                    <div class="col-6" id="obra-descripcion" style="border: 3px solid black; padding: 10px; text-align: center;">
+                        <!-- El descrip de la obra se mostrará aquí -->
+                    </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Duración
+                    </div>
+                    <div class="col-6" id="obra-duracion" style="border: 3px solid black; padding: 10px; text-align: center;">
+                        <!-- El duracion de la obra se mostrará aquí -->
+                    </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Director
+                    </div>
+                    <div class="col-6" id="obra-director" style="border: 3px solid black; padding: 10px; text-align: center;">
+                        <!-- El director de la obra se mostrará aquí -->
+                    </div>
+                </div>
+                <!-- Primera fila con dos columnas -->
+                <div class="row">
+                    <div class="col-6" style="border: 3px solid black; padding: 10px; text-align: center;">Interpretes
+                    </div>
+                    <div class="col-6" id="obra-interpretes" style="border: 3px solid black; padding: 10px; text-align: center;">
+                        <!-- El interpretes de la obra se mostrará aquí -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- slider section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> Fecha <span>Hora</span> </h1>
+
+
+        <!-- Tercera fila con tres columnas -->
+        <div class="row">
+            <div class="col-4" id="obra-fecha" style="border: 1px solid black; padding: 20px; text-align: center;">   
+                <!-- El fecha de la obra se mostrará aquí -->
+            </div>
+            <div class="col-4" id="obra-hora" style="border: 1px solid black; padding: 20px; text-align: center;">   
+                <!-- El hora de la obra se mostrará aquí -->
+            </div>
+            <a href="Reserva.html?id=placeholder" id="reserva-btn" type="submit" value="contact now" class="btn">Comprar entradas</a>
+        </div>
+        <!-- Tercera fila con tres columnas -->
+        <div class="row">
+            <div class="col-4" id="obra-fecha1" style="border: 1px solid black; padding: 20px; text-align: center;">   
+                <!-- El fecha de la obra se mostrará aquí -->
+            </div>
+            <div class="col-4" id="obra-hora1" style="border: 1px solid black; padding: 20px; text-align: center;">   
+                <!-- El hora de la obra se mostrará aquí -->
+            </div>
+            <a href="" type="submit" value="contact now" class="btn">Proximamente en venta</a>
+        </div>
+        <!-- Tercera fila con tres columnas -->
+        <div class="row">
+            <div class="col-4" id="obra-fecha2" style="border: 1px solid black; padding: 20px; text-align: center;">   
+                <!-- El fecha de la obra se mostrará aquí -->
+            </div>
+            <div class="col-4" id="obra-hora2" style="border: 1px solid black; padding: 20px; text-align: center;">   
+                <!-- El hora de la obra se mostrará aquí -->
+            </div>
+            <a href="" type="submit" value="contact now" class="btn">Proximamente en venta</a>
+        </div>
+
+
+    </section>
+
+    <!-- menu section ends -->
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100070092878427" target="_blank"
+                class="fab fa-facebook-f"></a>
+            <a href="https://x.com/bluedpirates?t=i2Jb9i-0HT_ufVsc0LtRCg&s=09" target="_blank"
+                class="fab fa-twitter"></a>
+            <a href="https://instagram.com/dramask?igshid=MTNiYzNiMzkwZA==" target="_blank"
+                class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">home</a>
+            <a href="aboutus.html">about</a>
+            <a href="product.html">cartelera</a>
+            <a href="#menu">horario</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="credit">©2021-2024 DraMask Imports, SRL ES B45203871 | <span>Web Design DraMask</span></div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/horario.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraMask</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/product.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body id="products">
+    <div id="index"></div>
+    <div id="prodcart"></div>
+    <header class="header">
+
+        <a href="index.html" class="logoo">
+            <img src="images/logo2.png" alt="" width="250" height="250">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="product.html">Cartelera</a>
+            <a href="aboutus.html">about us</a>
+        </nav>
+
+        <div class="icons" id="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search" onclick=""></label>
+        </div>
+
+
+    </header>
+
+
+
+    <section class="filter" id="filter">
+        <div class="filters">
+            <label>Filtro: &nbsp</label>
+            <select class="select" id="select" name="select">
+                <option value="">No Filtro</option>
+                <option value="-star">Mejor Valorado</option>
+                <option value="star">Peor Valorado</option>
+                <option value="precio">Más Caro</option>
+                <option value="-precio">Más Barato</option>
+            </select>
+
+            <label>Categoría: &nbsp</label>
+            <select class="select" id="select2" name="select2">
+                <option value="">No Filtro</option>
+                <option value="Drama">Drama</option>
+                <option value="Musical">Musical</option>
+                <option value="Tragedia">Tragedia</option>
+                <option value="Comedia">Comedia</option>
+                
+                
+            </select>
+            <span onclick="removeFilter()" id="removeFilter" class="fas fa-times"></span>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+       <div class="box-container" id="obras-container">
+
+        </div>
+        <!--<div class="box-container">
+            <div class="coolcard coolcard--2">
+                <img src="images/hamlet.jpg" class="coolcard__img" />
+                <div class="coolcard__body">
+                    <h1 class="coolcard__title">Hamlet</h1>
+                    <div class="coolcard__text">
+                        <a href="Horario.html" type="submit" value="contact now" class="btn">Comprar entradas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+    </section>
+    
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=100070092878427" target="_blank"
+                class="fab fa-facebook-f"></a>
+            <a href="https://x.com/bluedpirates?t=i2Jb9i-0HT_ufVsc0LtRCg&s=09" target="_blank"
+                class="fab fa-twitter"></a>
+            <a href="https://instagram.com/dramask?igshid=MTNiYzNiMzkwZA==" target="_blank"
+                class="fab fa-instagram"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">home</a>
+            <a href="aboutus.html">about</a>
+            <a href="#menu">Cartelera</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="credit">©2021-2024 DraMask Imports, SRL ES B45203871 | <span>Web Design DraMask</span></div>
+
+    </section>
+
+    <!-- footer section ends -->
+</body>
+
+<script src="js/script.js"></script>
+<script src="js/product.js"></script>
+<!--<script src="js/event2.js"></script>-->
+
+</html>

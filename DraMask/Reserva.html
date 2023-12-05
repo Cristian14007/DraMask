@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DraMask</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reserva.css">
+
+
+</head>
+
+<body>
+  <div id="reserva"></div>
+  <!-- header section starts  -->
+
+  <header class="header">
+
+    <a href="index.html" class="logoo">
+      <img src="images/logo2.png" alt="" width="250" height="250">
+    </a>
+
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="product.html">cartelera</a>
+      <a href="#menu">Asientos</a>
+      <a href="aboutus.html">about us</a>
+    </nav>
+
+    <div class="icons" id="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+  </header>
+
+  <!-- header section ends -->
+
+
+
+
+  <!-- slider section starts  -->
+
+  <section class="about" id="about">
+
+    <h1 class="heading"> <span>espacio</span> </h1>
+
+    <div class="row">
+
+      <div class="image">
+        <img src="images/hamlet.jpg" alt="" width="250" height="250">
+
+      </div>
+
+      <div class="content">
+        <!-- Primera fila con dos columnas -->
+        <div class="row">
+          <div class="col-12" id="obra-titulo" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+
+        </div>
+        <!-- Primera fila con dos columnas -->
+        <div class="row">
+          <div class="col-12" id="obra-fecha" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+
+        </div>
+        <!-- Primera fila con dos columnas -->
+        <div class="row">
+          <div class="col-12" id="obra-sala" style="border: 3px solid black; padding: 10px; text-align: center;"> </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- slider section ends -->
+
+  <!-- menu section starts  -->
+
+  <section class="menu" id="menu">
+
+    <h1 class="heading"> Reservar <span>Asientos</span> </h1>
+
+    <body>
+      <section id="section">
+        <div class="container">
+          <!-- leftCont -->
+          <div class="leftCont">
+            <div class="leftMainCont">
+              <div class="legendContainer">
+                <ul>
+                  <li>
+                    <div class="seat legend"></div>
+                    <small>Disponible</small>
+                  </li>
+                  <li>
+                    <div class="seat legend selected"></div>
+                    <small>Seleccionado</small>
+                  </li>
+                  <li>
+                    <div class="seat legend occupied"></div>
+                    <small>Ocupado</small>
+                  </li>
+                </ul>
+              </div>
+              <!-- seat Container -->
+              <div class="mainSeatCont">
+                <div class="screen">
+                  <small>Escenario</small>
+                </div>
+                <div class="seatCont" id="seatCont">
+                  <div class="seatRowCont1 seatRowCont">
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                  </div>
+                  <div class="seatRowCont2 seatRowCont">
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                  </div>
+                  <div class="seatRowCont3 seatRowCont">
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                    <div class="row">
+                      <div class="seat"></div>
+                      <div class="seat occupied"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                      <div class="seat"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Cont -->
+          <div class="rightCont">
+            <div class="confirmCont">
+              <div class="rightTopCont">
+                <!-- moviename -->
+
+                <div class="movieInfo">
+                  <!--<div class="selectMovie">
+                    <label>
+                      <p>Select Your Movie</p>
+                      <select id="selectMovie"></select>
+                    </label>
+                  </div>-->
+                  <div class="movieName">
+                    <p>Nombre Obra</p>
+                    <h1 id="movieName"> </h1>
+                  </div>
+                  <div class="moviePrice">
+                    <p>Precio obra</p>
+                    <h1 id="moviePrice"> </h1>
+                  </div>
+                  <div class="dateCont">
+                    <p>Fecha</p>
+                    <p id="dateOn" class="dateOn"> </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="rightBottomCont">
+                <div class="selectedSeatCont">
+                  <p>ASIENTOS SELECCIONADOS</p>
+                  <div class="selectedSeatsHolder" id="selectedSeatsHolder">
+                    <span class="noSelected">No Seat Selected</span>
+                  </div>
+                </div>
+                <!-- Seat number and price -->
+
+                <div class="numberOfSeatsCont">
+                  <div class="numberOfSeatEl">
+                    <p><span id="numberOfSeat">0</span> Seats(s)</p>
+                  </div>
+                  <div class="priceCont">
+                    <p id="totalPrice">$ 0</p>
+                  </div>
+                </div>
+                <!-- button Cont -->
+
+                <div class="buttonCont">
+                  <div class="cancelBtn">
+                    <button id="cancelBtn">Cancelar</button>
+                  </div>
+                  <div class="proceedBtnEl">
+                    <!--<button href="Compra.html?id=placeholder" id="proceedBtn">Continuar</button>-->
+                    <a href="Compra.html?id=placeholder" id="proceedBtn" type="submit" value="contact now" class="btn">Continuar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </body>
+
+
+
+  </section>
+
+  <!-- menu section ends -->
+
+
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="share">
+      <a href="https://www.facebook.com/profile.php?id=100070092878427" target="_blank" class="fab fa-facebook-f"></a>
+      <a href="https://x.com/bluedpirates?t=i2Jb9i-0HT_ufVsc0LtRCg&s=09" target="_blank" class="fab fa-twitter"></a>
+      <a href="https://instagram.com/dramask?igshid=MTNiYzNiMzkwZA==" target="_blank" class="fab fa-instagram"></a>
+    </div>
+
+    <div class="links">
+      <a href="index.html">home</a>
+      <a href="aboutus.html">about</a>
+      <a href="product.html">cartelera</a>
+      <a href="#menu">reservar</a>
+      <a href="#contact">contact</a>
+  </div>
+
+    <div class="credit">©2021-2024 DraMask Imports, SRL ES B45203871 | <span>Web Design DraMask</span></div>
+
+  </section>
+
+  <!-- footer section ends -->
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+  <script src="js/asientos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+  font: 11px/22px sans-serif;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  background: white;
+  padding: 40px 30px;
+  top: -30px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 60px 0px rgba(0, 0, 0, 0.1);
+  
+  .checkout {
+    .col-2 {
+      display: flex;
+      
+      .col:first-child {
+        margin-right: 15px;
+      }
+      .col:last-child {
+        margin-left: 15px;
+      }
+    }
+    
+    .label {
+      .type {
+        color: green;
+      }
+    }
+   
+    // card id classes are added based on user input
+    &.visa .label .type:before{
+      content: "(visa)"
+    }
+    &.mastercard .label .type:before {
+      content: "(master card)"
+    }
+    &.amex .label .type:before {
+      content: "(american express)"
+    }
+    
+    .field {
+      height: 40px;
+      border-bottom: 1px solid lightgray;
+
+      &#card-pan {
+        margin-bottom: 30px;
+      }
+
+         // state classes are added based on user behaviour
+      &.is-onfocus {
+        border-color: black;
+      }
+
+      &.is-empty {
+        border-color: orange;
+      }
+
+      &.is-invalid {
+        border-color: red;
+      }
+
+      &.is-valid {
+        border-color: green;
+      }
+    }
+
+    .submit {
+      background: red;
+      position: absolute;
+      cursor: pointer;
+      left: 50%;
+      bottom: -60px;
+      width: 200px;
+      margin-left: -100px;
+      color: white;
+      outline: 0;
+      font-size: 14px;
+      border: 0;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 15px 0;
+      transition: background 0.3s ease;
+    }
+    
+    &.is-valid {
+      .submit {
+        background: green;
+      }
+    }
+  }
+}
