@@ -20,6 +20,140 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+/*********Obtener asientos ocupados por obra */
+//var obraId = urlParams.get('id');
+const butacas = [
+  {
+    id: 0,
+    selectedSeat: "1"
+  },
+  {
+    id: 1,
+    selectedSeat: "1,2,3,4"
+  },
+  {
+    id: 2,
+    selectedSeat: "1,5,6"
+  },
+  {
+    id: 3,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 4,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 5,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 6,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 7,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 8,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 9,
+    selectedSeat: "1,2"
+  }
+
+];
+
+const urlParams = new URLSearchParams(window.location.search);
+  const obraId = urlParams.get('id');
+
+// Obtén el elemento que contiene los asientos
+var seatContainer = document.getElementById('seatCont');
+
+// Separa los asientos seleccionados en un array
+var asientosSeleccionados = butacas[obraId].selectedSeat.split(',');
+
+// Itera sobre los asientos y cambia la clase según el id
+asientosSeleccionados.forEach(function (idAsiento) {
+  var asiento = document.getElementById(idAsiento);
+  if (asiento) {
+    // Cambia la clase del asiento a 'occupied'
+    asiento.classList.add('occupied');
+  }
+});
+/* const butacas = [
+  {
+    id: 0,
+    selectedSeat: "1"
+  },
+  {
+    id: 1,
+    selectedSeat: "1,2,3,4"
+  },
+  {
+    id: 2,
+    selectedSeat: "1,5,6"
+  },
+  {
+    id: 3,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 4,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 5,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 6,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 7,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 8,
+    selectedSeat: "1,2"
+  },
+  {
+    id: 9,
+    selectedSeat: "1,2"
+  }
+
+];
+document.addEventListener('DOMContentLoaded', function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const obraId = urlParams.get('id');
+
+  if (obraId) {
+    fetch(`http://localhost:3000/api/obras/${obraId}`)
+      .then(response => response.json())
+      .then(obra => {
+        //document.querySelector('#about .heading span').textContent = obra.titulo;
+        var seatContainer = document.getElementById('seatCont');
+
+// Separa los asientos seleccionados en un array
+var asientosSeleccionados = butacas[obraId].selectedSeat.split(',');
+
+// Itera sobre los asientos y cambia la clase según el id
+asientosSeleccionados.forEach(function (idAsiento) {
+  var asiento = document.getElementById(idAsiento);
+  if (asiento) {
+    // Cambia la clase del asiento a 'occupied'
+    asiento.classList.add('occupied');
+  }
+});
+      })
+      .catch(error => console.error('Error al cargar obra:', error));
+  }
+}); */
+/*********Obtener asientos ocupados por obra */
+
 //asientos
 const moviesList = [
     { movieName: "Hamlet", price: 35 },

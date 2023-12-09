@@ -47,6 +47,7 @@ const obras = [
         sala: 1,
         star: 5,
         hora: "21:30"
+
     },
     {
         id: 3,
